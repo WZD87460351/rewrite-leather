@@ -1,0 +1,588 @@
+//common style start
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(../images/bodybg.png);
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.fL{
+    float: left;
+}
+.fR{
+    float: right;
+}
+.titlepart{
+    height: 32px;
+    border-bottom: 1px solid #5b0906;
+    position: relative;
+    span{
+        display: block;
+        line-height: 32px;
+        color: #5b0906;
+        font-weight: 700;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #5b0906;
+            margin-right: 10px;
+            position: relative;
+            left: 0;
+            top: 3px;
+        }
+        &:after{
+            content: "";
+            display: block;
+            height: 5px;
+            background: #5b0906;
+        }
+    }
+    p{
+        font-size: 12px;
+        color: lightgray;
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+    }
+}
+//common style end
+
+//head style start
+.headpart{
+    width: 100%;
+    height: 177px;
+    background: url(../images/head-bg.jpg) repeat-x;
+    .headcontent{
+        height: 100%;
+        .headnav{
+            width: 100%;
+            height: 54px;
+            .picandnav{
+                ul{
+                    background: #7e1f1b;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    margin:0px 10px;
+                    li{
+                        float: left;
+                        height: 35px;
+                        font-size: 12px;
+                        line-height: 35px;
+                        color: white;
+                        padding: 0px 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+        .headintroduction{
+            width: 100%;
+            .explain{
+                p{
+                    border-left: 1px solid black;
+                    padding-left: 10px;
+                    margin-top: 32px;
+                    font-weight: 700;
+                    span{
+                        color: red;
+                    }
+                }
+            }
+            .telephone{
+                margin-top: 30px;
+                img{
+                    animation: url .07s linear infinite alternate;
+                }
+                P{
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding-top: 10px;
+                    span{
+                        color:red;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes url{
+    from{
+        transform:rotateZ(-10deg);
+    }
+    to{
+       transform: rotateZ(10deg);
+    }
+}
+//head style end
+//navigation start
+.navigationpart{
+    height: 45px;
+    background: url(../images/bannerline.jpg) no-repeat center;
+    ul li{
+        float: left;
+        line-height: 45px;
+        color: white;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+}
+//navigation end
+//rotation start
+.swiper-container{
+    height: 486px;
+}
+//rotation end
+//product-center start
+.product-center{
+    background: url(../images/bodybg.png);
+    .productcontent{
+        .search{
+//            background: red;
+            margin-top: 10px;
+            input[type=text]{
+                width: 288px;
+                height: 29px;
+                border: 1px solid gray;
+                border-right: none;
+                box-sizing: border-box;
+            }
+            input[type=button]{
+                height: 29px;
+                width: 66px;
+                color: white;
+                background: #5b0906;
+                border: none;
+            }
+            .hotsearch{
+                font-size: 12px;
+                padding-top: 10px;
+                padding-left: 5px;
+                ul li{
+                    float: left;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .exhibitionpart{
+            margin-top: 16px;
+            .exhibitionlist{
+                background: url(../images/exhibitionlistbg.png);
+                width: 210px;
+                .listpart{
+                    width: 198px;
+                    background: #fff1d4;
+                    margin: 0 auto;
+                    margin-bottom: 7px;
+                    .textborderpic{
+                        width: 178px;
+                        height: 33px;
+                        text-align: center;
+                        line-height: 33px;
+                        margin: 16px auto;
+                        background: url(../images/listtextbgpic.png) no-repeat center;
+                    }
+                    ul li{
+                        margin: auto auto 10px 10px;
+                        &:before{
+                            content: "";
+                            display: inline-block;
+                            margin-right: 10px;
+                            border: 4px solid #5b0906;
+                            border-top-color: transparent;
+                            border-bottom-color: transparent;
+                            border-right-color: transparent;
+                        }
+                    }
+                }
+            }
+            .exhibitionpic{
+                width: 768px;
+                .picturepart{
+                    margin-top: 18px;
+                    .pictureone{
+                        width: 230px;
+                        height: 247px;
+                        margin-right: 25px;
+                        img{
+                            width: 220px;
+                            height: 182px;
+                            border: 4px solid white;
+                        }
+                        p{
+                            text-align: center;
+                            line-height: 50px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//product-center end
+//coopration start
+.coopration{
+    width: 100%;
+    height: 366px;
+    background: url(../images/centerbg.png) no-repeat center;
+    .cooprationcontent{
+        .cooprationlogo{
+            width: 221px;
+            margin: 10px auto;
+        }
+        .cooprationlogos{
+            img{
+                height: 77px;
+                width: 161px;
+            }
+        }
+    }
+}
+//coopration end
+//sofaandbed start
+.sofaandbed{
+    .titlepart{
+        margin-top: 30px;
+        height: 46px;
+        span{
+            &:before{
+                display: none;
+            }
+        }
+    }
+    .sofaandbedpics{
+        margin-top: 20px;
+        .picone{
+            width: 243px;
+            height: 216px;
+            float: left;
+            margin-left: 6px;
+            img{
+                width: 235px;
+                border: 4px solid white;
+            }
+            p{
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+    .separateline{
+        height: 30px;
+        border-bottom: 1px solid #5b0906;
+        position: relative;
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 80px;
+            background: #5b0906;
+            position: absolute;
+            left: 0;
+            top: 30px;
+        }
+        &:after{
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 80px;
+            background: #5b0906;
+            position: absolute;
+            right: 0;
+            top: 30px;
+        }
+    }
+    .headache{
+        width: 400px;
+        height: 260px;
+        margin-top: 16px;
+    }
+    .questions{
+        margin: 30px auto auto 40px;
+        h3{
+            color: #7e1f1b;
+            font-size: 30px;
+        }
+        .slectoptions{
+            width: 490px;
+            height: 140px;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            background: url(../images/checkboxbg.png) no-repeat center;
+            input[type=checkbox]{
+                width: 25px;
+                height: 23px;
+                margin: 30px auto auto 30px;
+            }
+            
+        }
+        p{
+            font-size: 20px;
+            margin: 10px auto auto 30px;
+        }
+    }
+}
+//sofaandbed end
+//select leather start
+.selectleather{
+    width: 100%;
+    height: 151px;
+    background: url(../images/selectleather.png) no-repeat center;
+    margin-top: 40px;
+}
+//select leather end
+//product introduction start
+.introduction{
+    position: relative;
+    height: 1200px;
+    .introductionpartone{
+        width: 500px;
+        margin-top: 10px;
+        .textpart{
+            margin: 10px auto auto 10px;
+            h2{
+                font-size: 18px;
+                color: #5b0906;
+            }
+            hr{
+                border: none;
+	            border-bottom: 1px dashed #5b0906;
+            }
+        }
+    }
+    .introductionparttwo{
+        position: absolute;
+        left: 0;
+        top: 200px;
+    }
+    .introductionpartthree{
+        position: absolute;
+        right: 0;
+        top: 450px;
+    }
+    .introductionpartfour{
+        position: absolute;
+        left: 0;
+        top: 740px;
+    }
+    .introductionpartfive{
+        position: absolute;
+        left: 0;
+        top: 960px;
+    }
+    .introductionpic1{
+        position: absolute;
+        right: 0;
+        top: 70px;
+    }
+    .introductionpic2{
+        position: absolute;
+        left: 0;
+        top: 425px;
+    }
+    .introductionpic3{
+        position: absolute;
+        right: 0;
+        top: 700px;
+    }
+}
+//product introduction end
+//consultative part start
+.consultative{
+    height: 140px;
+    background: url(../images/consultative.png) no-repeat center;
+}
+.consultativecont{
+    margin: 40px auto;
+    .consultativecontleft{
+        width: 710px;
+        .description{
+            margin-top: 20px;
+            box-shadow: 10px 0px 5px -2px #888;
+            .car{
+                width: 250px;
+                height: 210px;
+                float: left;
+            }
+            .article{
+                width: 400px;
+                margin-left: 30PX;
+            }  
+        }
+        
+    }
+    .consultativecontright{
+        width: 260px;
+        .explanation{
+            margin-top: 20px;
+            span{
+                font-size: 20px;
+                margin-top: 90px;
+            }
+            .license{
+                width: 160px;
+                height: 220px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+//consultative part end
+//walk into enterprise start
+.enterpriseshow{
+    width: 100%;
+    height: 236px;
+    background: #dbbb7b;
+    border-top: 3px solid #5b0906;
+    border-bottom: 3px solid #5b0906;
+    .enterprisepics{
+        margin-top: 20px;
+        .piccontent{
+            margin-left: 10px;
+            img{
+                width: 240px;
+                height: 160px;
+            }
+            P{
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+    }
+    
+}
+.details{
+    margin-top: 40px;
+    .detailone{
+        width: 290px;
+        &:nth-child(1){
+            box-shadow: 10px 0 5px -2px #888;
+        }
+        &:nth-child(2){
+            box-shadow: 10px 0 5px -2px #888;
+            margin-left: 60px;
+        }
+        img{
+            margin-top: 10px;
+            width: 290px;
+        }
+        ul li{
+            margin-top: 10px;
+            &:before{
+                content: "";
+                display: inline-block;
+                border: 5px solid #5b0906;
+                border-top-color: transparent;
+                border-bottom-color: transparent;
+                border-right-color: transparent;
+            }
+        }
+    }
+    .detailthree{
+        .askpart{
+            margin-top: 16px;
+            hr{
+                border: none;
+                border-bottom: 1px dashed #5b0906;
+                margin: 20px auto;
+            }
+            .askpartone{
+                margin-bottom: 10px;
+                &:nth-child(2n){
+                    span{
+                        background: red;
+                    }
+                    p{
+                        color: black;
+                    }
+                }
+            }
+            span{
+                float: left;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 12px;
+                color: white;
+                border-radius: 50%;
+                background: #5b0906;
+            }
+            p{
+                float: left;
+                width: 260px;
+                color: #5b0906;
+                margin-left: 10px;
+            }
+        }
+    }
+    .detailfour{
+        width: 100%;
+        margin-top: 40px;
+        .linkpart{
+            margin-top: 20px;
+            a{
+                line-height: 30px;
+                color: black;
+            }
+            
+        }
+    }
+}
+//walk into enterprise end
+//bottom part start
+.bottompart{
+    width: 100%;
+    height: 292px;
+    margin-top: 30px;
+    background: url(../images/bottombg.png) no-repeat center;
+    .bottomcontent{
+        ul li{
+            float: left;
+            font-size: 14px;
+            color: white;
+            margin: 20px 10px 50px 20px;
+        }
+        .bottomlogo{
+            img{
+                margin: auto 20px auto 200px;
+            }
+            p{
+                color: white;
+                font-size: 14px;
+                line-height: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+//bottom part end
